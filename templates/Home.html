@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  text-align: center; }
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;}
+
+.wrapper {
+    text-align: center;}
+
+.predict_button {border-radius: 25%;}
+
+h1.a {
+  text-align: center;
+  color: white;}
+  
+</style>
+    <title>Heart Disease Prediction System</title>
+    <meta charset="utf-8">
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="/static/home/css/style.css">
+
+    <!-- searchbox css -->
+    <link rel="stylesheet" href="/static/type/css/searchbox.css">
+
+    <!-- insertion templates -->
+       
+  	<link rel="stylesheet" href="/static/insertion/css/tooplate-style.css">
+  	<link rel="stylesheet" href="/static/insertion/css/fontawesome-all.min.css"> 
+
+    <!-- Custom CSS -->
+    <link href="/static/lapsus/css/style.css" rel="stylesheet">
+
+
+</head>
+<body 
+<div class="full-height" style="background-image:url(/static/home/images/bg1.jpg);">
+  <section class="ftco-cover"  id="section-home">
+    <div class="container">
+      <div class="row align-items-center ftco-vh-100">
+        <div class="col-md-12">
+          <div class="ftco-heading mb-5"><h1 class="a">Heart Disease Prediction System</h1></div>
+            <div class="grid-container">
+
+              <div class="grid-child left">
+                <h1 style="color:white;">Project Aim</h1>
+                <p>The main purpose of this project is to predict whether a person has heart disease or not?</p>
+                <br><p><strong>Input and output</br></p></strong>
+                <p><strong>Input:</strong> Passenger</p>
+                <p><strong>Output:</strong> Prediction (1 / 0)</p></br>
+                <p><strong>Representation of Input (Passenger)</br></p></strong> 
+                <p><strong>&emsp;&emsp;Input (Person) is Represented as 13 Input Attributes</br></p></strong> 
+                
+                <p><strong>&emsp;&emsp;Input Attributes 01– Age (Passenger Class)</br></p></strong> 
+                <br>
+                <p><strong>&emsp;&emsp;Input Attributes 02– Sex</br></p></strong> 
+                <p><strong>&emsp;&emsp;&emsp;&emsp;Possible Value 01 – </strong>Male</p>
+                <p><strong>&emsp;&emsp;&emsp;&emsp;Possible Value 02 – </strong>Female</p>
+                <br>                
+                <p><strong>&emsp;&emsp;Input Attributes 03– CP</br></p></strong> 
+                <p><strong>&emsp;&emsp;&emsp;&emsp;Possible Value 01 – </strong>0</p>
+                <p><strong>&emsp;&emsp;&emsp;&emsp;Possible Value 02 – </strong>1</p>
+                <p><strong>&emsp;&emsp;&emsp;&emsp;Possible Value 03 – </strong>2</p>
+                <p><strong>&emsp;&emsp;&emsp;&emsp;Possible Value 03 – </strong>3</p>
+                <br>                
+                <p><strong>&emsp;&emsp;Input Attributes 04– Trestbps</br></p></strong>             
+                <br>                
+                <p><strong>&emsp;&emsp;Input Attributes 05– Chol</br></p></strong>             
+                <br>
+                <p><strong>&emsp;&emsp;Input Attributes 06– fbs</br></p></strong> 
+                <p><strong>&emsp;&emsp;&emsp;&emsp;Possible Value 01 – </strong>0</p>
+                <p><strong>&emsp;&emsp;&emsp;&emsp;Possible Value 02 – </strong>1</p>
+                <br>
+                <p><strong>&emsp;&emsp;Input Attributes 07– restecg</br></p></strong> 
+                <p><strong>&emsp;&emsp;&emsp;&emsp;Possible Value 01 – </strong>0</p>
+                <p><strong>&emsp;&emsp;&emsp;&emsp;Possible Value 02 – </strong>1</p>
+                <br>
+                <p><strong>&emsp;&emsp;Input Attributes 08– thalach</br></p></strong>
+                <br> 
+                <p><strong>&emsp;&emsp;Input Attributes 09– exang</br></p></strong> 
+                <p><strong>&emsp;&emsp;&emsp;&emsp;Possible Value 01 – </strong>0</p>
+                <p><strong>&emsp;&emsp;&emsp;&emsp;Possible Value 02 – </strong>1</p>
+                <br> 
+                <p><strong>&emsp;&emsp;Input Attributes 10– oldpeak</br></p></strong> 
+                <br> 
+                <p><strong>&emsp;&emsp;Input Attributes 11– slope</br></p></strong> 
+                <p><strong>&emsp;&emsp;&emsp;&emsp;Possible Value 01 – </strong>0</p>
+                <p><strong>&emsp;&emsp;&emsp;&emsp;Possible Value 02 – </strong>1</p>
+                <p><strong>&emsp;&emsp;&emsp;&emsp;Possible Value 03 – </strong>2</p>
+                <br>
+                <p><strong>&emsp;&emsp;Input Attributes 12– ca</br></p></strong> 
+                <p><strong>&emsp;&emsp;&emsp;&emsp;Possible Value 01 – </strong>0</p>
+                <p><strong>&emsp;&emsp;&emsp;&emsp;Possible Value 02 – </strong>1</p>
+                <p><strong>&emsp;&emsp;&emsp;&emsp;Possible Value 03 – </strong>2</p>
+                <p><strong>&emsp;&emsp;&emsp;&emsp;Possible Value 04 – </strong>3</p>
+                <br>
+                <p><strong>&emsp;&emsp;Input Attributes 13– thal</br></p></strong> 
+                <p><strong>&emsp;&emsp;&emsp;&emsp;Possible Value 01 – </strong>0</p>
+                <p><strong>&emsp;&emsp;&emsp;&emsp;Possible Value 02 – </strong>1</p>
+                <p><strong>&emsp;&emsp;&emsp;&emsp;Possible Value 03 – </strong>2</p>
+                <p><strong>&emsp;&emsp;&emsp;&emsp;Possible Value 04 – </strong>3</p>
+                <br>
+                <p><strong>Representation of Output</br></p></strong> 
+                <p><strong>&emsp;&emsp;&nbsp;Output is Represented as a single Output Attributes</br></p></strong> 
+                <p><strong>&emsp;&emsp;&emsp;&emsp;Output Attribute – Target </br></p></strong> 
+                <p><strong>&emsp;&emsp;&emsp;&emsp;Possible Value 01 – </strong>1</p>
+                <p><strong>&emsp;&emsp;&emsp;&emsp;Possible Value 02 – </strong>0</p>
+                <br>
+                <br><br><br>    
+              </div>
+              
+              <div class="grid-child right">
+              <h1 style="color:white;">Input(Passenger)</h1><br>
+                
+                <div class="page" >
+                  <div class="page__demo">   
+                    <form action="{{ url_for('predict')}}" class="search" method="POST">
+                      <input type="text" name="age" placeholder="Age" required="required" />
+                </div>
+                <br />
+                <div class="dropdown">
+                    <select class="form-control btn-secondary" name="sex" id="sex" style="background: rgb(0, 0, 0, 0.5);border-width: 3px;border-color: #f0526c;color: white;height: 40px;" onchange="checkSelection(this)" required>
+                      <option selected disabled value="">Select Sex</option>
+                      <option value="1">1</option>
+                      <option value="0">0</option>
+                    </select>
+                </div>
+                <br />
+                <div class="dropdown">
+                    <select class="form-control btn-secondary" name="cp" id="cp" style="background: rgb(0, 0, 0, 0.5); border-width: 3px; border-color: #f0526c; color: white; height: 40px; " onchange="checkSelection(this)" required >
+                      <option selected disabled value="">
+                        Select cp
+                      </option>
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+                 </div>
+		 <br />
+		 <br />
+			<input type="text" name="trestbps" placeholder="trestbps" required="required" />
+		 <br />
+		 <br />
+			<input type="text" name="chol" placeholder="chol" required="required" />
+                 <br />
+		 <br />
+                 <div class="dropdown">
+                    <select class="form-control btn-secondary" name="fbs" id="fbs" style="background: rgb(0, 0, 0, 0.5);border-width: 3px;border-color: #f0526c;color: white;height: 40px;" onchange="checkSelection(this)" required>
+                      <option selected disabled value="">
+                        Select fbs
+                      </option>
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                    </select>
+                  </div>
+                 <br />
+		 <br />
+                 <div class="dropdown">
+                    <select class="form-control btn-secondary" name="restecg" id="restecg" style="background: rgb(0, 0, 0, 0.5);border-width: 3px;border-color: #f0526c;color: white;height: 40px;" onchange="checkSelection(this)" required>
+                      <option selected disabled value="">
+                        Select restecg
+                      </option>
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                    </select>
+                  </div>      
+		 <br />
+			<input type="text" name="thalach" placeholder="thalach" required="required" />
+		 <br />
+		 <br />
+                 <div class="dropdown">
+                    <select class="form-control btn-secondary" name="exang" id="exang" style="background: rgb(0, 0, 0, 0.5);border-width: 3px;border-color: #f0526c;color: white;height: 40px;" onchange="checkSelection(this)" required>
+                      <option selected disabled value="">
+                        Select exang
+                      </option>
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                    </select>
+                  </div>      
+		 <br />
+		 <br />
+			<input type="text" name="oldpeak" placeholder="oldpeak" required="required" />
+		 <br />
+		 <br />
+                 <div class="dropdown">
+                    <select class="form-control btn-secondary" name="slope" id="slope" style="background: rgb(0, 0, 0, 0.5);border-width: 3px;border-color: #f0526c;color: white;height: 40px;" onchange="checkSelection(this)" required>
+                      <option selected disabled value="">
+                        Select slope
+                      </option>
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                    </select>
+                  </div>
+		 <br />
+                 <div class="dropdown">
+                    <select class="form-control btn-secondary" name="ca" id="ca" style="background: rgb(0, 0, 0, 0.5);border-width: 3px;border-color: #f0526c;color: white;height: 40px;" onchange="checkSelection(this)" required>
+                      <option selected disabled value="">
+                        Select ca
+                      </option>
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+                  </div>
+		 <br />
+                 <div class="dropdown">
+                    <select class="form-control btn-secondary" name="thal" id="thal" style="background: rgb(0, 0, 0, 0.5);border-width: 3px;border-color: #f0526c;color: white;height: 40px;" onchange="checkSelection(this)" required>
+                      <option selected disabled value="">
+                        Select thal
+                      </option>
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+                  </div>
+                 <div class="wrapper">
+		     <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+                 </div>
+                      </div></form>
+                   </div>
+                 </div>
+                <strong>Output &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;: <i style="color: red;">{{ prediction_text1 }}</i></strong>
+          </div>
+        </div>  
+     </div> 
+   </div> 
+</section>
+
+    <!-- END section -->
+    
+
+
+<div class="footer">
+  <a>Copyrights © 2021 | Zeeshan Khan | All Rights Reserved</a>
+</div>  
+</div>
+  </body>
+</html>
